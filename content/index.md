@@ -1,6 +1,11 @@
 ---
-title: Welcome to Quartz
+title: index
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+im bennet lol
+
+---
+
+
+[notes](/current-bike) [stream](#) [are.na](#) [scratchpad](#) [writings](#)
+

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: "bennet"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -21,12 +21,12 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
+        light: "#bac8b1"
+        lightgray: "#404e3b"
+        gray: "#404e3b"
+        darkgray: "#2b2b2b"
         dark: "#2b2b2b"
-        secondary: "#284b63"
+        secondary: "#404e3b"
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
@@ -172,9 +172,11 @@ plugins:
       priority: 10
   - source: github:quartz-community/content-meta
     enabled: true
+    options:
+      showReadingTime: false
     layout:
       position: beforeBody
-      priority: 20
+      priority: 13
   - source: github:quartz-community/tag-list
     enabled: false
     layout:
@@ -215,8 +217,10 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        cc by-nc-sa: "#"
+        colophon: "#"
+        privacy: "#"
+        term of service: "#"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -240,7 +244,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
