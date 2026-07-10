@@ -2,11 +2,35 @@
 
 // put your custom CSS here!
 
+// Hides the article title and meta on the homepage
 body[data-slug="index"] {
-  .article-title {
-    display: none;
+  #quartz-body {
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
   }
+
+  .article-title,
   .content-meta {
     display: none;
   }
+
+  .left.sidebar,
+  .right.sidebar {
+    display: none;
+  }
+
+    .page-footer {
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+}
+
+// Remove the "Powered by Quartz" text from the footer
+footer > p {
+  display: none;
 }

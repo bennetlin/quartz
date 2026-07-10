@@ -1,9 +1,11 @@
 ---
-title: cinelli vigorelli 2012
+title: road to fixed gear
 draft: false
 tags:
   - cycling
-date: 2026-01-01
+date: 2026-03-31
 ---
- check out my new bike :) 
+Sold the cannondale and made the jump to urban riding. 
+
+Fixed gear bikes... 
 

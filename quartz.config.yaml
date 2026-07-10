@@ -150,7 +150,7 @@ plugins:
   - source: github:quartz-community/graph
     enabled: true
     layout:
-      position: right
+      position: afterBody
       priority: 10
   - source: github:quartz-community/search
     enabled: true
@@ -161,7 +161,7 @@ plugins:
       groupOptions:
         grow: true
   - source: github:quartz-community/backlinks
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 50
@@ -200,7 +200,7 @@ plugins:
       priority: 35
       group: toolbar
   - source: github:quartz-community/breadcrumbs
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 5
@@ -217,9 +217,8 @@ plugins:
     enabled: true
     options:
       links:
-        cc by-nc-sa: "#"
-        colophon: "#"
-        privacy: "#"
+        instagram: "https://www.instagram.com/beenetline/"
+        linkedin: "https://linkedin.com/in/bennetlin"
         term of service: "#"
   - source: github:quartz-community/recent-notes
     enabled: false

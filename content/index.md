@@ -2,10 +2,14 @@
 title: index
 ---
 
-im bennet lol
+hello
+
+i'm bennet
+
+welcome  
 
 ---
 
 
-[notes](/current-bike) [stream](#) [are.na](#) [scratchpad](#) [writings](#)
+[hobbies](/current-bike) [stream](#) [are.na](#) [scratchpad](#) [writings](#)
 
