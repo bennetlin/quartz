@@ -2,6 +2,7 @@
 
 // put your custom CSS here!
 
+// All Homepage Changes
 // Hides the article title and meta on the homepage
 body[data-slug="index"] {
   #quartz-body {
@@ -21,16 +22,30 @@ body[data-slug="index"] {
     display: none;
   }
 
-    .page-footer {
+  .page-footer {
     margin-bottom: 2rem;
   }
 
   footer {
     margin-top: 3rem;
   }
+
+  // Hidden hub links — exist for the graph, not shown to visitors
+  article .markdown-preview-view > p:last-child {
+    display: none;
+  }
 }
 
 // Remove the "Powered by Quartz" text from the footer
 footer > p {
   display: none;
+}
+
+// Change the heading of the graph section
+.graph h3 {
+  font-size: 0;
+}
+.graph h3::before {
+  content: "explore";
+  font-size: 1.1rem; /* match whatever the original heading size was */
 }

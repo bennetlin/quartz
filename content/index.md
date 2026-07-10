@@ -6,10 +6,13 @@ hello
 
 i'm bennet
 
-welcome  
+wagwan  
 
 ---
 
 
-[hobbies](/hobbies) [stream](#) [are.na](#) [scratchpad](#) [writings](#)
+[hobbies](/hobbies) [scratchpad](#) 
 
+// Graph Links
+[[hobbies/cycling/index]] 
+[[hobbies/music/index]] 
