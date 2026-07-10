@@ -11,5 +11,5 @@ welcome
 ---
 
 
-[hobbies](/current-bike) [stream](#) [are.na](#) [scratchpad](#) [writings](#)
+[hobbies](/hobbies) [stream](#) [are.na](#) [scratchpad](#) [writings](#)
 

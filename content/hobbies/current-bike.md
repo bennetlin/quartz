@@ -1,5 +1,5 @@
 ---
-title: road to fixed gear
+title: road cycling to fixed gear
 draft: false
 tags:
   - cycling
