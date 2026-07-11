@@ -155,8 +155,8 @@ plugins:
       globalGraph:
         depth: -1
     layout:
-      position: afterBody
-      priority: 10
+      position: left
+      priority: 50
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -272,7 +272,6 @@ layout:
     folder:
       exclude:
         - reader-mode
-        - graph
       positions:
         right: []
     tag:

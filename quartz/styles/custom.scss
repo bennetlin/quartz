@@ -30,8 +30,8 @@ body[data-slug="index"] {
     margin-top: 3rem;
   }
 
-  // Hidden hub links — exist for the graph, not shown to visitors
-  article .markdown-preview-view > p:last-child {
+  // Hide the graph section on the homepage
+  .graph {
     display: none;
   }
 }
@@ -41,11 +41,42 @@ footer > p {
   display: none;
 }
 
-// Change the heading of the graph section
-.graph h3 {
-  font-size: 0;
+// Hide popups for folder pages. 
+.popover-inner:has(.page-listing) {
+  display: none !important;
 }
-.graph h3::before {
-  content: "explore";
-  font-size: 1.1rem; /* match whatever the original heading size was */
+
+// Hide tags on folder pages
+.page-listing .tags {
+  display: none;
 }
+
+//Cinelli Previews
+.bike-hotspot { display: flex; flex-direction: column; gap: 1.5rem; max-width: 900px; margin: 2rem 0; }
+.bike-hotspot-svg { width: 100%; }
+.bh-shape { fill: transparent; stroke: transparent; stroke-width: 2; cursor: pointer; transition: fill 0.25s ease, stroke 0.25s ease; }
+.bh-shape:hover { fill: transparent; stroke: var(--secondary); }
+.bh-dim { fill: rgba(0, 0, 0, 0.85); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+.bike-hotspot:has(.bh-shape-frame:hover) #dim-frame,
+.bike-hotspot:has(.bh-shape-fork:hover) #dim-fork,
+.bike-hotspot:has(.bh-shape-headset:hover) #dim-headset,
+.bike-hotspot:has(.bh-shape-crankset:hover) #dim-crankset,
+.bike-hotspot:has(.bh-shape-seat:hover) #dim-seat,
+.bike-hotspot:has(.bh-shape-wheelset:hover) #dim-wheelset,
+.bike-hotspot:has(.bh-shape-cockpit:hover) #dim-cockpit,
+.bike-hotspot:has(.bh-shape-drivetrain:hover) #dim-drivetrain { opacity: 1; }
+.bh-details { min-height: 160px; }
+.bh-panel { display: none; }
+.bh-hint { color: var(--gray); font-size: 0.85rem; font-style: italic; }
+.bh-panel h3 { margin-top: 0; letter-spacing: 0.03em; }
+.bh-panel ul { padding-left: 1.1rem; font-size: 0.85rem; }
+.bh-panel li { margin-bottom: 0.4rem; }
+.bike-hotspot:has(.bh-shape-frame:hover) .bh-panel-frame,
+.bike-hotspot:has(.bh-shape-fork:hover) .bh-panel-fork,
+.bike-hotspot:has(.bh-shape-headset:hover) .bh-panel-headset,
+.bike-hotspot:has(.bh-shape-crankset:hover) .bh-panel-crankset,
+.bike-hotspot:has(.bh-shape-seat:hover) .bh-panel-seat,
+.bike-hotspot:has(.bh-shape-wheelset:hover) .bh-panel-wheelset,
+.bike-hotspot:has(.bh-shape-cockpit:hover) .bh-panel-cockpit,
+.bike-hotspot:has(.bh-shape-drivetrain:hover) .bh-panel-drivetrain { display: block; }
+.bike-hotspot:not(:has(.bh-shape:hover)) .bh-panel-none { display: block; }
